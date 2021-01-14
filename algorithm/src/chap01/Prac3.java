@@ -4,18 +4,20 @@ public class Prac3 {
 	
 	// 1부터 n까지의 합 문자열로 출력하는 메서드 (연습문제 Q7)
 	public static String stringSum(int n) {
-		String str = "";
-		int sum = 0;
+		String str = ""; // 덧셈과정 문자열
+		int sum = 0; // 정수의 합
 		
+		// 덧셈 과정 문자열을 연결하는 부분
 		for (int i = 1; i <= n; i++) {
 			if(i != n) {
 				str += i + " + ";
 			} else {
 				str += i + " = ";
 			}
-			sum += i;
+			sum += i; // 정수의 합 구하기
 		}
 		
+		// 덧셈 과정과 덧셈 결과 출력
 		return str + sum;
 	}
 	
@@ -26,21 +28,23 @@ public class Prac3 {
 	
 	// a부터 b까지의 그 사이값의 합을 구하는 메서드
 	public static int sumof(int a, int b) {
-		int sum = 0, start = a, end = b;
+		int sum = 0, start = a, end = b; // 합계, 시작값, 종료값
 		
+		// a가 b보다 크다면 시작값을 b, 종료값을 a로 변경
 		if(a > b) {
 			start = b;
 			end = a;
 		}
 		
+		// 두 수 사이의 정수값의 합을 구하는 부분
 		for (int i = start; i <= end; i++) {
 			sum += i;
 		}
 		
-		return sum;
+		return sum; // 결과값
 	}
 	public static void main(String[] args) {
-		int n = 10;
+		int n = 10; // 정수 n
 		
 		// 연습문제 Q7
 		System.out.println(stringSum(n));

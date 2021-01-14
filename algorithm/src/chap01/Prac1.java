@@ -2,9 +2,9 @@ package chap01;
 
 public class Prac1 {
 	
-	//4개의 값 중에서 최대값을 구하는메서드
+	//4개의 값 중에서 최댓값을 구하는메서드
 	static int max4(int a, int b, int c, int d) {
-		int max = a;
+		int max = a; // 최댓값
 		
 		if(b > max) {
 			max = b;
@@ -23,7 +23,7 @@ public class Prac1 {
 	
 	// 3개의 값 중 최소값을 구하는 메서드
 	static int min3(int a, int b, int c) {
-		int min = a;
+		int min = a; // 최솟값
 		
 		if(b < min) {
 			min = b;
@@ -38,7 +38,7 @@ public class Prac1 {
 	
 	// 4개의 값 중 최소값을 구하는 메서드
 	static int min4(int a, int b, int c, int d) {
-		int min = a;
+		int min = a; // 최솟값
 		
 		if(b < min) {
 			min = b;
@@ -56,6 +56,7 @@ public class Prac1 {
 	}
 	
 	public static void main(String[] args) {
+		// 결과 출력
 		System.out.println("max4(3, 2, 1, 4) = " + max4(3, 2, 1, 4));
 		System.out.println("max4(3, 2, 2, 3) = " + max4(3, 2, 2, 3));
 		System.out.println("max4(3, 4, 1, 2) = " + max4(3, 4, 1, 2));

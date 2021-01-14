@@ -7,8 +7,10 @@ public class Max3 {
 	
 	// 3개의 정수를 입력하고 최대값을 구합니다.
 	public static void main(String[] args) {
+		// 콘솔창으로 입력받는 Scanner 클래스 생성
 		Scanner stdIn = new Scanner(System.in);
 		
+		// 세 정수 입력받기
 		System.out.println("세 정수의 최대값을 구합니다.");
 		System.out.print("a의 값: ");
 		int a = stdIn.nextInt();
@@ -17,10 +19,12 @@ public class Max3 {
 		System.out.print("c의 값: ");
 		int c = stdIn.nextInt();
 		
+		// 최댓값을 구하기
 		int max = a;
 		if(b > max) max = b;
 		if(c > max) max = c;
 		
+		// 최대값 출력 하기
 		System.out.println("최대값은 '" + max + "입니다.");
 		stdIn.close();
 	}
